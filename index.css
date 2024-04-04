@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+:root {
+  --bg: #fb9ad1;
+  --btn1: #ff7ed4;
+  --btn2: #f5dd61;
+  --btn3: #ad88c6;
+  --btn4: #5e1675;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 2%;
+  margin-top: 0.1;
+  display: flex;
+  justify-content: center;
+}
+h1,
+h2 {
+  font-family: "Concert One", sans-serif;
+}
+h2 {
+  display: flex;
+  margin: 2%;
+  justify-content: end;
+  margin-top: 0.1;
+  font-size: 1.9rem;
+}
+
+.All {
+  background-image: url(img/multi-layers-soft-colorful-texture-3d-papercut-layers-in-gradient-banner-abstract-paper-cut-art-background-design-for-website-template-topography-map-concept-or-smooth-origami-paper-cut-vect.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  border-radius: 3%;
+  margin: 25px;
+  padding: 25px;
+  background-color: rgba(156, 202, 232, 0.226);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.title {
+  color: aliceblue;
+  font-size: 1.5rem;
+  font-style: bold;
+  font-weight: 700;
+}
+
+.links {
+  background-color: var(--btn4);
+  padding: 7px;
+  border: 3px solid var(--btn3);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.links:hover {
+  background-color: var(--btn3);
+  border: 3px solid var(--btn4);
+}
+
+.links:active {
+  border: 3px solid var(--btn1);
+  background-color: var(--btn3);
+}
+
+@media (min-width: 900px) {
+  .All {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
