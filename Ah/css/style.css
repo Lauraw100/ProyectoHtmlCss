@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200; 1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    background-color: brown;
+    margin: 0;
+    box-sizing: border-box;
+}
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid blue; */
+    width: 100%;
+    height: auto;
+}
+.contenedor_imagenes { 
+    position: relative;
+    width: 100%;
+    /* border: 2px solid white; */
+    height: 50vh;
+}
+.medio{ 
+    position: absolute;
+    width: 50%;
+    top: 10%;
+    left: 25%;
+    /* border: 2px solid blue; */
+    z-index: 1;
+}
+.completo { 
+    position: absolute;
+    width: 50%;
+    top: 15%;
+    height: auto;
+    /* border: 2px solid blue; */
+    left: 25%;
+    z-index: 4;
+    background: none;
+}
+.superior { 
+    position: absolute;
+    top: 6%;
+    width: 20%;
+    /* border: 2px solid blue; */
+    background: none;
+    left: 19%;
+    z-index: 2;
+
+}
+.inferior { 
+    position: absolute;
+    width: 20%;
+    background: none;
+    /* border: 2px solid blue; */
+    left: 60%;
+    top: 45%;
+    z-index: 3;
+}
+.contenedor_texto { 
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: auto;
+    /* border: 2px solid blue; */
+    font-family: "Poppins", sans-serif; 
+    gap: 14px;
+    color: white;
+    padding: 2%;
+}
+.contenedor_texto p{
+    font-size: 2vh;
+    color: bisque;
+}
+.contenedor_texto h1{
+    font-size: 5vh;
+}
+.contenedor_texto button{
+    background-color: rgb(247, 162, 58);
+    padding: 3% 2%;
+    border-radius: 20px;
+    width: 40%;
+    font-size: 3vh;
+}
+button:hover {
+    background-color:rgb(189, 238, 221);
+}
+@media (min-width:450px){
+    button:hover {
+        background-color:rgb(189, 238, 221);
+    }
+    .contenedor_imagenes { 
+        position: relative;
+        width: 100%;
+        /* border: 2px solid white; */
+        height: 110vh;
+    }
+    .inferior { 
+        position: absolute;
+        width: 20%;
+        background: none;
+        /* border: 2px solid blue; */
+        left: 60%;
+        top: 40%;
+        z-index: 3;
+    }
+    .completo { 
+        position: absolute;
+        width: 48%;
+        top: 15%;
+        height: auto;
+        /* border: 2px solid blue; */
+        left: 25%;
+        z-index: 4;
+        background: none;
+    }
+    .contenedor_texto button{
+        background-color: rgb(247, 162, 58);
+        padding: 2% 1%;
+        border-radius: 20px;
+        width: 30%;
+        font-size: 3vh;
+    }
+    
+}
+@media (min-width:990px){
+    button:hover {
+        background-color:rgb(189, 238, 221);
+    }
+    .contenedor {
+        display: flex;
+        flex-direction: row;
+        /* border: 2px solid blue; */
+        width: 100%;
+        height: 100vh;
+    }
+    .contenedor_imagenes { 
+        position: relative;
+        width: 60%;
+        height: 100vh;
+        /* border: 2px solid white; */
+    }
+    .medio{ 
+        position: absolute;
+        width:60%;
+        top: 5%;
+        left: 20%;
+        /* border: 2px solid blue; */
+        z-index: 1;
+    }
+    .superior { 
+        position: absolute;
+        top: 6%;
+        width: 20%;
+        /* border: 2px solid blue; */
+        background: none;
+        left: 19%;
+        z-index: 2;
+    
+    }
+    .inferior { 
+        position: absolute;
+        width: 20%;
+        background: none;
+        /* border: 2px solid blue; */
+        left: 60%;
+        top: 50%;
+        z-index: 3;
+    }
+    .completo { 
+        position: absolute;
+        width: 58%;
+        top: 5%;
+        height: auto;
+        /* border: 2px solid blue; */
+        left: 20%;
+        z-index: 4;
+        background: none;
+    }
+    .contenedor_texto { 
+        position: relative;
+        width: 35%;
+        /* border: 2px solid blue; */
+        gap: 5%;
+        padding: 2%;
+    }
+    .contenedor_texto p{
+        font-size: 2.5vh;
+        color: bisque;
+    }
+    .contenedor_texto h1{
+        font-size: 11vh;
+    }
+}
+

@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.contenedor {
+    background:linear-gradient(rgb(4, 4, 78),rgb(15, 15, 143)) ;
+    background-image:url("../images/astronauta.png") ;
+    
+    position:absolute;
+}
+
+.contenedor .fondo{
+    position: relative;
+    top: 0;
+    right: 0;
+} 

@@ -7,11 +7,209 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+button {
+    background: black;
+    color: white;
+    border-radius:10px;
+    padding: 2%;
+}
+button:hover {
+    background-color:gray;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid blue; */
 
+}
+.contenedor_primera {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+    /* border: 1px solid blue; */
+
+}
 .contenedor_logo {
     display:flex;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 100%;
     height: auto;
     justify-content: center;
+    order: 1;
+}
+.contenedor_titulo {
+    display:flex;
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: auto;
+    font-size: 4vw;
+    text-align: center;
+    order: 2;
+}
+.contenedor_imagen {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    order: 3;
+    /* border: 1px solid blue; */
+}
+.contenedor_imagen img{
+    width: 80%;
+    /* border: 1px solid blue; */
+}
+.contenedor_texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid blue; */
+    text-align: justify;
+    width: 100%;
+    gap: 10px;
+    order: 4;
+}
+
+.contenedor_texto_button {
+    display: flex;
+    width: 80%;
+    /* border: 1px solid blue; */
+    justify-content: space-around;
+}
+.contenedor_text_button {
+    background: white;
+    color: black;
+    border-radius:10px;
+    border: 1px solid black;
+}
+.contenedor_texto_big {
+    width: 80%;
+    /* border: 1px solid blue; */
+}
+.contenedor_iconos {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid blue; */
+    justify-content: center;
+    font-size: 2vh;
+    width: 100%;
+    order: 5;
+}
+
+.contenedor_iconos_centrado {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1%;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+@media (min-width:992px) {
+    .contenedor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        /* border: 1px solid blue; */
+        padding: 0% 1%;
+    }
+    button {
+        background: black;
+        color: white;
+        border-radius:10px;
+        padding: 2% 5%;
+    }
+    .contenedor_primera {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 50%;
+        /* border: 1px solid blue; */
+
+    }
+    .contenedor_logo {
+        display:flex;
+        /* border: 1px solid blue; */
+        width: 100%;
+        height: auto;
+        justify-content: flex-start;
+        order: 0;
+    }
+    .contenedor_titulo {
+        display:flex;
+        /* border: 1px solid blue; */
+        width: 90%;
+        height: auto;
+        font-size: 2.8vw;
+        text-align: start;
+        order: 0;
+    }
+    .contenedor_imagen {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        height: auto;
+        order: 0;
+        /* border: 1px solid blue; */
+    }
+    .contenedor_imagen img{
+        width: 80%;
+        /* border: 1px solid blue; */
+    }
+    .contenedor_texto {
+        display: flex;
+        flex-direction: column;
+        font-size: 3vh;
+        align-items: center;
+        /* border: 1px solid blue; */
+        text-align: start;
+        width: 100%;
+        gap: 15px;
+        order: 0;
+    }
+    
+    .contenedor_texto_button {
+        display: flex;
+        width: 100%;
+        /* border: 1px solid blue; */
+        justify-content: space-around;
+    }
+    .contenedor_text_button {
+        background: white;
+        color: black;
+        border-radius:10px;
+        border: 1px solid black;
+    }
+    .contenedor_texto_big {
+        width: 90%;
+        /* border: 1px solid blue; */
+    }
+    .contenedor_iconos {
+        display: flex;
+        flex-direction: row;
+        /* border: 1px solid blue; */
+        justify-content: center;
+        font-size: 2vh;
+        width: 100%;
+        order: 0;
+    }
+    .contenedor_iconos_centrado {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 1%;
+    }
+    .contenedor_iconos_centrado .iconos {
+        /* border: 1px solid blue; */
+        width: 15%;
+    }
 }

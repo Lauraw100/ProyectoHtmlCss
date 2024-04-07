@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+button{
+    background-color: whitesmoke;
+    padding: 2% 2%;
+    border-radius: 30px;
+    width: 10vw;
+    font-size: 2vw;
+}
+button:hover {
+    background-color:rgb(189, 238, 221);
+}
+.contenedor {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    padding: 1% 5%;
+    width: 100%;
+    height: auto;
+    background: rgb(1, 1, 33);
+}
+.letra_colores {
+    grid-column: 1/2 ;
+    grid-row: 1;
+    width: 100%;
+    height: 100%; 
+    padding: 0% 8%;
+}
+.letra_colores h1 {
+   font-size: 6vw;
+}
+.rosa {
+    color: pink;
+ }
+ .celestes {
+    color: aqua;
+ }
+ .aguamarina {
+    color: aquamarine;
+ }
+
+.letra_normal {
+    grid-column: 1/2 ;
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+    padding: 0% 8%; 
+}
+.letra_normal p {
+    font-size: 2vw;
+    color: aliceblue;
+}
+.contenedor_images {
+    display: grid;
+    grid-column: 2/3 ;
+    grid-row: 1/3;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+    max-height: 100%; 
+}
+.contenedor_images img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover; 
+}
+@media (max-width:600px) {
+    .contenedor {
+        display: flex;
+       flex-direction: column;
+        padding: 1% 5%;
+        width: 100%;
+        height: auto;
+        background: rgb(1, 1, 33);
+
+    }
+    .contenedor_images {
+        display: grid;
+        grid-column: 2/3 ;
+        grid-row: 1/3;
+        grid-template-columns: 1fr ;
+        grid-template-rows: repeat(16, 1fr);
+        width: 100%;
+        height: 100%;
+
+        max-height: 100%; 
+    }
+    .contenedor_images img {
+        width: 70%;
+        height: 90%;
+        object-fit: cover;
+    }
+    .contenedor_images div {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        height: 100%;
+
+
+    }
+    .letra_normal p {
+        font-size: 4vw;
+        color: aliceblue;
+    }
+    .letra_normal {
+       order: 1;
+
+    }
+    .letra_colores {
+        display: flex;
+        justify-content: space-between;  
+     }
+     .letra_colores h1 {
+        font-size: 7vw;
+     }
+}
