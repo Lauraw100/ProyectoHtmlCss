@@ -43,8 +43,7 @@ button:hover{
     grid-column: 1/3 ;
     width: 100%;
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;  
 }
 .contenedor_imagenes_centro {
     width: 88%;
@@ -52,6 +51,7 @@ button:hover{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     z-index: 1;
     padding: 1%;
+    font-size: 0,1rem;
 }
 .contenedor_imagenes_uno  {
     background: url(../images/lineauno.png) ;
@@ -113,6 +113,51 @@ button:hover{
       width: 100%;
       height: auto;
       gap: 15px;
+    }
+    .contenedor_imagenes_uno  {
+        background: url(../images/lineauno.png) ;
+        background-position: center;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 4% 0%;
+        border-radius: 5px;
+    }
+    .contenedor_imagenes_centro{
+        grid-row: 2/3;
+        grid-column: 1/3 ;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;  
+        align-items: center;
+        gap: 10px;
+    }
+    .contenedor_imagenes_dos {
+        background: url(../images/lineados.png);
+        background-position: center;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 4% 0%;
+        border-radius: 5px;
+    }
+    .contenedor_imagenes_tres {
+        background: url(../images/linea3.png) ;
+        background-position: center;
+        justify-content: center;
+        display: flex;
+        align-items: flex-end;
+        padding: 4% 0%;
+    }
+    .contenedor_imagenes_cuatro {
+        background: url(../images/lineacinco.png) ;
+        background-position: center;
+        justify-content: center;
+        display: flex;
+        align-items: flex-end;
+        padding: 4% 0%;
+        border-radius: 0px 24px 24px 0px;
     }
     .contenedor_texto {
         padding: 4% 2%;
