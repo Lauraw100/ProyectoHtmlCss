@@ -22,6 +22,7 @@ button:hover{
   grid-template-rows: 1.5fr 0.2fr;
   width: 100%;
   height: auto;
+  background-color: #FBF4DF;
 }
 img{
     width: 20%;
@@ -138,13 +139,38 @@ img{
 .contenedor_texto .titulo {
     width: 100%;
     display: flex;
-    padding: 4%;
     align-items: center;
+    border: 2px solid black;
+    flex-direction: column;
 }
 .contenedor_texto .titulo h1{
     width: 100%;
     font-family: Poppins,sans-serif;
-    font-size: 2.9vw;
+    font-size: 3.4vw;
+}
+.contenedor_texto .titulo img{
+    width: 5%;
+}
+.contenedor_texto .titulo .img1{
+    position: relative;
+    top: -7%;
+    left: -50%;
+}
+.contenedor_texto .titulo .img2{
+    position: relative;
+    top: -18%;
+    left: 50%;
+}
+.contenedor_texto .titulo .img3{
+    position: relative;
+    top: 18%;
+    left: 50%;
+  
+}
+.contenedor_texto .titulo .img4{
+    position: relative;
+    top: 7%;
+    left: -50%;
 }
 .contenedor_texto .tema {
     width: 100%;
@@ -181,13 +207,34 @@ img{
     }
     .contenedor_texto {
         display: flex;
-        flex-direction: column;
+        flex-direction: column; 
         justify-content: center;
         padding: 0%;
         gap: 2%;
     }
     .contenedor_texto .titulo {
-        background-size: 100%;
+        width: 90%;
+        margin: 0% 5%;
+    }
+    .contenedor_texto .titulo .img1{
+        position: absolute;
+        left: 2.5%;
+        top: 7.5%;
+    }
+    .contenedor_texto .titulo .img2{
+        position: absolute;
+        left: 92.5%;
+        top: 7.5%;
+    }
+    .contenedor_texto .titulo .img3{
+        position: absolute;
+        left: 92.5%;
+        top: 21.5%;
+    }
+    .contenedor_texto .titulo .img4{
+        position: absolute;
+        left: 2.5%;
+        top: 21.5%;
     }
     button{
         width: 20vw;
