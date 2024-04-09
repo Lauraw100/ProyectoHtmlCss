@@ -14,7 +14,7 @@ button {
     padding: 2%;
 }
 button:hover {
-    background-color:gray;
+    background-color:rgb(189, 238, 221);
 }
 .contenedor{
     display: flex;
@@ -109,6 +109,114 @@ button:hover {
     border: 1px solid black;
 }
 
+.contenedor_imagen {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    height: auto;
+    order: 0;
+    padding: 4%;
+    /* border: 1px solid blue; */
+}
+.contenedor_imagen .principal{
+    grid-column: 1/5;
+    grid-row: 1/4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor_imagen .principal img{
+    width: 60%;
+    position: relative;
+    z-index: 3;
+    /* border: 1px solid blue; */
+}
+.contenedor_imagen .cuadro{
+    grid-column: 3/5;
+    grid-row: 2/4;
+    display: flex;
+    align-items: center;
+    padding-bottom: 6%;
+}
+.contenedor_imagen .cuadro img{
+    width: 80%;
+    position: relative;
+    z-index: 1;
+    /* border: 1px solid blue; */
+}
+.contenedor_imagen .cuadrosuperior{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2%;
+    padding-top: 6%;
+}
+.contenedor_imagen .cuadrosuperior img{
+    width: 70%;
+    position: relative;
+    z-index: 1;
+    /* border: 1px solid blue; */
+}
+.contenedor_imagen .estrellabajo{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    display: flex;
+    align-items: start;
+    justify-content: flex-end;
+    padding-bottom: 2%;
+}
+.contenedor_imagen .estrellabajo img{
+    width: 60%;
+    position: relative;
+    z-index: 4;
+    /* border: 1px solid blue; */
+}
+.contenedor_imagen .estrellagrande{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding-top: 2%;
+}
+.contenedor_imagen .estrellagrande img{
+    width: 60%;
+    position: relative;
+    z-index: 4;
+    /* border: 1px solid blue; */
+}
+.contenedor_imagen .dialogouno{
+    grid-column: 3/5;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2%;
+}
+.contenedor_imagen .dialogouno img{
+    width: 60%;
+    position: relative;
+    z-index: 4;
+    /* border: 1px solid blue; */
+}
+.contenedor_imagen .dialogodos{
+    grid-column: 1/3;
+    grid-row: 3/4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10%;
+}
+.contenedor_imagen .dialogodos img{
+    width: 60%;
+    position: relative;
+    z-index: 4;
+    /* border: 1px solid blue; */
+}
+
 @media (min-width:992px) {
     .contenedor{
         display: flex;
@@ -151,15 +259,110 @@ button:hover {
         order: 0;
     }
     .contenedor_imagen {
-        display: flex;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr) ;
+        grid-template-rows: repeat(3, 1fr);
         width: 50%;
         height: auto;
         order: 0;
+        padding: 4%;
         /* border: 1px solid blue; */
     }
-    .contenedor_imagen img{
+    .contenedor_imagen .principal{
+        grid-column: 1/5;
+        grid-row: 1/4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contenedor_imagen .principal img{
+        width: 60%;
+        position: relative;
+        z-index: 3;
+        /* border: 1px solid blue; */
+    }
+    .contenedor_imagen .cuadro{
+        grid-column: 3/5;
+        grid-row: 2/4;
+        display: flex;
+        align-items: center;
+        padding-bottom: 6%;
+    }
+    .contenedor_imagen .cuadro img{
         width: 80%;
+        position: relative;
+        z-index: 1;
+        /* border: 1px solid blue; */
+    }
+    .contenedor_imagen .cuadrosuperior{
+        grid-column: 1/4;
+        grid-row: 1/3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 2%;
+        padding-top: 6%;
+    }
+    .contenedor_imagen .cuadrosuperior img{
+        width: 70%;
+        position: relative;
+        z-index: 1;
+        /* border: 1px solid blue; */
+    }
+    .contenedor_imagen .estrellabajo{
+        grid-column: 3/4;
+        grid-row: 3/4;
+        display: flex;
+        align-items: start;
+        justify-content: flex-end;
+        padding-bottom: 2%;
+    }
+    .contenedor_imagen .estrellabajo img{
+        width: 60%;
+        position: relative;
+        z-index: 4;
+        /* border: 1px solid blue; */
+    }
+    .contenedor_imagen .estrellagrande{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        padding-top: 2%;
+    }
+    .contenedor_imagen .estrellagrande img{
+        width: 60%;
+        position: relative;
+        z-index: 4;
+        /* border: 1px solid blue; */
+    }
+    .contenedor_imagen .dialogouno{
+        grid-column: 3/5;
+        grid-row: 1/2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2%;
+    }
+    .contenedor_imagen .dialogouno img{
+        width: 60%;
+        position: relative;
+        z-index: 4;
+        /* border: 1px solid blue; */
+    }
+    .contenedor_imagen .dialogodos{
+        grid-column: 1/3;
+        grid-row: 3/4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 10%;
+    }
+    .contenedor_imagen .dialogodos img{
+        width: 60%;
+        position: relative;
+        z-index: 4;
         /* border: 1px solid blue; */
     }
     .contenedor_texto {

@@ -23,6 +23,7 @@ button{
 }
 button:hover {
     background-color:gray;
+    transition: 2s;
 }
 .contenedor_parteuno {
     display: grid;
@@ -104,6 +105,7 @@ hr {
     .contenedor {
         display: flex;
         flex-direction: column;
+        
         width: 100%;
         padding: 1% 5%;
         height: auto;
@@ -114,6 +116,7 @@ hr {
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 9%;
         width: 100%;
         /* border: 2px solid blue; */
     }
@@ -128,7 +131,7 @@ hr {
     .contenedor_parteuno_ondas img {
         display: flex;
         flex-direction: column;
-        width: 40%;
+        width: 10%;
         gap: 3px;
         /* border: 2px solid blue; */
     }
@@ -145,11 +148,13 @@ hr {
         align-items: center;
         width: 100%;
         /* border: 4px solid maroon; */
-        gap:2%;
+        
     }
     .contenedor_partedos img {
         display: grid;
         width: 100%;
+        height: 60%;
+
         /* border: 2px solid red; */
     }
     .contenedor_imagen {
@@ -170,6 +175,7 @@ hr {
     }
     .contenedor_imagen_arriba img{
         width: 60%;
+        height: 60%;
     }
     .contenedor_imagen_abajo {
         display: flex;

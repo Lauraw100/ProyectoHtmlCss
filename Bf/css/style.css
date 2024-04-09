@@ -1,16 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+
 *{
     margin: 0;
     box-sizing: border-box;
 }
 .contenedor {
-    background:linear-gradient(rgb(4, 4, 78),rgb(15, 15, 143)) ;
-    background-image:url("../images/astronauta.png") ;
+    background-image:linear-gradient(#08202B,#06303B,#043C48) ;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 2fr ;
+    grid-template-rows: 1fr 0.5fr;
+    width: 100%;
+    height: 100vh;
     
-    position:absolute;
+}
+button{
+    background-color: #63E1E1;
+    color: black;
+    padding: 1.5% 4%;
+    border-radius: 30px;
+    width: 6vw;
+    font-size: 1vw;
+    border: transparent;
+}
+button:hover {
+    background-color:rgb(59, 128, 226);
+    transition: 2s;
+}
+.contenedor .fondo{
+    display: flex;
+    justify-content:flex-end ;
+    grid-column: 2/4;
+    grid-row: 1/4;
+    position: relative;
+    width: 100%; 
+    z-index: 1; 
+} 
+.contenedor_uno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.contenedor_uno_colores{
+    display: flex;
+    height: 3%;
+}
+.filtrogrande {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    border-radius: 20px;
+    border:1px solid white;
+    padding: 2% 4%;
+    background: rgba(5, 7,12, 0.30);
+    backdrop-filter: blur(5px);
+    width: 73%;
+    height: 80%;
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+    z-index: 3;
+}
+.filtrogrande h1{
+    font-size: 3vw;
+}
+.filtrogrande p{
+    font-size: 1vw;
+}
+.contenedor_dos{
+    display: flex;
+    justify-content: center;
+    grid-column: 1/4;
+    grid-row: 2/3;
+    position: relative;
+    width: 100%;
+    height: 80%; 
+    z-index: 3;  
+}
+.filtro {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 40px;
+    border:1px solid white;
+    padding: 2%;
+    background: rgba(5, 7,12, 0.30);
+    backdrop-filter: blur(5px);
+    width: 90%;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+.contenedor_dos_items{
+    display: flex;
+    width: 40%;
+    padding: 1% 2%;
+    flex-direction:column;
+    
+}
+.contenedor_dos_items img{
+    width: 10%;
 }
 
-.contenedor .fondo{
-    position: relative;
-    top: 0;
-    right: 0;
-} 
+@media (max-width:990px){
+    .contenedor {
+        background-image:linear-gradient(#08202B,#06303B,#043C48) ;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 0.5fr;
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-position: center;
+    }
+    .contenedor .fondo{
+        display: flex;
+        justify-content:flex-end ;
+        grid-column: 1/2;
+        grid-row: 1/4;
+        position: relative;
+        width: 100vw; 
+        height: 100vh;
+        z-index: 1; 
+
+    } 
+    .contenedor_uno{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        
+    }
+    .filtrogrande {
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+        border-radius: 20px;
+        border:1px solid white;
+        padding: 2% 4%;
+        background: rgba(5, 7,12, 0.30);
+        backdrop-filter: blur(5px);
+        width: 90%;
+        height: 80%;
+        color: aliceblue;
+        font-family: "Poppins", sans-serif;
+
+        z-index: 3;
+    }
+    .filtrogrande h1{
+        font-size: 3vw;
+
+    }
+    .filtrogrande p{
+        font-size: 2vw;
+
+    }
+    .contenedor_dos_items h1{
+        font-size: 3vw;
+    }
+    .contenedor_dos_items p{
+        font-size: 1vw;
+    }
+    button{
+        background-color: #63E1E1;
+        color: black;
+        padding: 1% 4%;
+        border-radius: 30px;
+        width: 15vw;
+        font-size: 2vw;
+        border: transparent;
+        box-shadow: 2px 1px 6px #63E1E1;  
+    }
+}
+@media (max-width:500px){
+    .contenedor {
+        background-image:linear-gradient(#08202B,#06303B,#043C48) ;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 0.5fr;
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-position: center;
+ 
+    }
+    .contenedor .fondo{
+        display: flex;
+        justify-content:flex-end ;
+        grid-column: 1/2;
+        grid-row: 1/4;
+        position: relative;
+        width: 100vw; 
+        height: 100vh;
+        z-index: 1; 
+
+    } 
+    .contenedor_uno{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        
+    }
+    .filtrogrande {
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+        border-radius: 20px;
+        border:1px solid white;
+        padding: 2% 4%;
+        background: rgba(5, 7,12, 0.30);
+        backdrop-filter: blur(5px);
+        width: 90%;
+        height: 80%;
+        color: aliceblue;
+        font-family: "Poppins", sans-serif;
+
+        z-index: 3;
+    }
+    .filtrogrande h1{
+        font-size: 6vw;
+
+    }
+    .filtrogrande p{
+        font-size: 4vw;
+
+    }
+    button{
+        background-color: #63E1E1;
+        color: black;
+        padding: 1.5% 4%;
+        border-radius: 30px;
+        width: 20vw;
+        font-size: 3vw;
+        border: transparent;
+        box-shadow: 2px 1px 6px #63E1E1;  
+    }
+    .contenedor_dos_items h1{
+        font-size: 4vw;
+    }
+    .contenedor_dos_items p{
+        font-size: 2vw;
+    }
+}
