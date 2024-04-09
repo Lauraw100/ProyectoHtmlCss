@@ -40,7 +40,10 @@ h2 {
   margin-top: 0.1;
   font-size: 1.7rem;
 }
-
+a{
+  width: 160px;
+  height: 40px;
+}
 .All {
   background-image: url(img/ya.jpeg);
   background-repeat: repeat;
@@ -54,8 +57,11 @@ h2 {
   margin: 25px;
   padding: 25px;
   background-color: rgba(156, 202, 232, 0.226);
+ justify-content: center; 
 }
-
+.All .container{
+  margin-left: 150%;
+}
 .container {
   display: flex;
   flex-direction: column;
